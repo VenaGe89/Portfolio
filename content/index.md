@@ -1,11 +1,15 @@
 ---
 Title: Home
-Description: This is our index page.
+Description: Detta är index-sidan
 ---
 
-Home page
+Välkommen till Sebastians /me-sida!
 ==========================
 
-The source for this page is in `content/index.md`.
+*Här kommer det utvecklas och se snyggare ut över tid! :)*
 
-This is a sample home page written in markdown with some frontmatter defined.
+Mål:
+* Bli bättre på CSS och styling med hjälp av t.ex. SASS
+* Lära sig mer om vad som faktiskt ser snyggt ut
+* Lära sig mer om hur man använder paket och moduler i PHP
+* Lära sig mer om templating språk
