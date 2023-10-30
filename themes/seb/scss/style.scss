@@ -1,0 +1,258 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,700;1,900&family=Nanum+Gothic+Coding&family=Open+Sans:wght@400&family=Roboto:ital@0;1&display=swap');
+
+@keyframes large-text-anim {
+    0% {font-size: medium;}
+    75% {font-size: xx-large;}
+    100% {font-size: x-large;}
+}
+
+@keyframes move-from-side {
+    0% {border-left: $accent-color solid 0px ; border-right: $accent-color  0px solid; border-radius: 0%;}
+    75% {border-left:$accent-color  solid 2.4dvi; border-right: $accent-color  solid 2.4dvi;border-radius: 2.4dvi;}
+    100% {border-left: $accent-color  solid 1.5dvi; border-right: $accent-color  solid 1.7dvi;border-radius: 2.8dvi;}
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+a {
+    color: $font-color;
+}
+
+html, body {
+    height: 100%;
+    
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $plain-white;
+}
+
+
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+.header {
+    border-bottom: $accent-color solid 2px;
+    margin-bottom: 0.5rem;
+}
+.header, .site-header, .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 15%;
+}
+
+.site-header h1, .site-header p {
+    font-family: Roboto, sans-serif;
+}
+
+.nav {
+   
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nav a, .nav li {
+   color: $font-color;
+    text-decoration: none;
+    font-size: medium;
+ 
+
+
+}
+
+.nav li:hover, .nav a:hover {
+    animation: large-text-anim 1s ease 1 forwards;
+}
+
+/* Title */
+
+.title, .logo {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.logo img {
+    max-width: 120px;
+    min-width: 64px;
+    
+}
+
+.title a {
+    text-decoration: none;
+}
+
+
+
+
+
+.title * {
+    color: $font-alternative-color;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px dotted $accent-color;
+    
+}
+
+.footer a {
+    color: $font-alternative-color;
+}
+
+.footer .social {
+    font-size: 2rem;
+    align-self: center;
+   .fa {
+        transform: scale(2)
+    }
+}
+
+.footer div {
+    min-width: 15%;
+    max-width: 30%;
+    align-content: center;
+    align-self: center;
+}
+
+
+/* Typografy */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.7rem;
+    color: $font-color;
+}
+
+p, td, th, li, dd{
+    text-align: center justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: $font-color;
+    max-width: 50%;
+    
+}
+
+p {
+    margin-bottom: 1em;
+    letter-spacing: 0.1em;
+}
+
+li {
+    margin-left:1em;
+}
+
+ul,ol {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    color: $font-alternative-color;
+    font-family: Open Sans, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+.main {
+    flex: 1 0 auto;
+    margin: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-self: center;
+    animation: move-from-side 1s 1 ease forwards;
+    background-color: $plain-white;
+
+}
+table, thead,th, tr, td, del, s {
+    background-color: $accent-color;
+}
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 0.8em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: $plain-white;
+    
+}
+
+.main i, .main li, .main ul, .main ol, .main p, .main em{
+ 
+        background-color: $plain-white;
+}
+
+@media (max-width: 767px) {
+
+        .title, .logo, .nav-toggle {
+            margin-top: 2em;
+            padding-top: 5em;
+            padding-bottom: 0;
+        }
+
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer div {
+        max-width: 80%;
+    }
+
+    .logo img {
+        max-width: 128px;
+        min-width: 64px;
+    }
+    p, td, th, li, dd{
+        text-align: center justify;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        color: $font-color;
+        max-width: 100%;
+        
+    }
+}

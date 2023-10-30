@@ -1,5 +1,5 @@
 ---
-Logo: assets/img/panda_logo.png
+Logo: assets/img/logo_3.png
 Tagline: Portofofofilio.
 Social:
     - title: Link till sidans github repo.
