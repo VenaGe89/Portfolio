@@ -1,6 +1,7 @@
 ---
 Title: Home
 Description: Detta är index-sidan
+Template: index
 ---
 
 Välkommen till Sebastians /me-sida!

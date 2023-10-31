@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "example": "example"
+    "kmom03": "kmom03"
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass seb/scss/style.scss seb/css/style.css --no-source-map",
-    "style-min": "sass seb/scss/style.scss seb/css/style.min.css --no-source-map --style compressed"
+    "style": "sass kmom03/scss/style.scss kmom03/css/style.css --no-source-map",
+    "style-min": "sass kmom03/scss/style.scss kmom03/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,10 @@
   "devDependencies": {
     "normalize.css": "^8.0.1",
     "sass": "^1.69.5",
-    "stylelint-config-sass-guidelines": "^10.0.0"
+    "stylelint": "^15.11.0",
+    "stylelint-config-sass-guidelines": "^10.0.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-csstree-validator": "^3.0.0",
+    "stylelint-scss": "^5.3.0"
   }
 }

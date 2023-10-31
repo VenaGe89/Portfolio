@@ -1,0 +1,19 @@
+{%
+    set list = {
+        'css' : "css",
+        'git' : "git",
+        'html' : "html",
+        'javascript' : "javascript",
+        'php' : "php",
+        'python' : "python",
+        'sqlite' : "sqlite"
+    }
+%}
+
+<div class="sidebar">
+    {% for key, value in list %}
+ <div class="box"><a href="{{value}}">
+    {{key}}</a>
+    </div>
+    {% endfor %}
+</div>
