@@ -1,3 +1,8 @@
+---
+Title: Färganalys
+Description: Detta är index-sidan
+---
+
 Färganalys
 =======================
 
