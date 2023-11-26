@@ -21,5 +21,9 @@
     <link rel="stylesheet" href="{{ theme_url }}/css/code.css" type="text/css" />
     <link rel="stylesheet" href="{{ theme_url }}/css/grid_test.css" type="text/css" />
      <link rel="stylesheet" href="{{ theme_url }}/css/technology.css" type="text/css" />
+    {% if config.session.theme == "dark" %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
+{% else %}
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+{% endif %}
 </head>

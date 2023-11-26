@@ -8,6 +8,29 @@ if (is_file(__DIR__ . '/vendor/autoload.php')) {
 
 require_once(__DIR__ . "/config/config.php");
 
+if (isset($_GET["action"])) {
+    if ($_GET["action"] == "theme") {
+        $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
+
+        if ($previousValue == "dark") {
+            unset($_SESSION["theme"]);
+        } else {
+            $_SESSION["theme"] = "dark";
+        }
+
+        $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+        $url = preg_replace("/index.php\//", "", $url);
+        header("Location: $url");
+    }
+
+
+if ($_GET["action"] == "session_destroy") {
+    session_destroy();
+    $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+    $url = preg_replace("/index.php\//", "", $url);
+    header("Location: $url");
+}
+}
 // instance Pico
 $pico = new Pico(
     __DIR__,    // root dir
@@ -17,7 +40,11 @@ $pico = new Pico(
 );
 
 // override configuration?
-//$pico->setConfig(array());
+$pico->setConfig(array(
+    'session' => $_SESSION
+));
+
+
 
 // run application
 echo $pico->run();

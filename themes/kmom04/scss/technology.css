@@ -1,0 +1,83 @@
+/* technology.scss */
+@keyframes largen {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.sidebar {
+  grid-column: span 1;
+  margin-bottom: 1em;
+}
+
+.box {
+  grid-column: span 1;
+  border: 4px #7A5243 solid;
+  background-color: #3FA591 !important;
+  color: #fff3df;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.box :hover, .box :focus {
+  animation: largen 0.75s 1 forwards;
+}
+.box a {
+  color: #fff3df;
+  text-decoration: none;
+  margin: auto 0;
+  height: 100%;
+  padding: 2em;
+  background-color: none;
+}
+
+.landingpage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em 1em;
+}
+.landingpage .col {
+  grid-column: span 1;
+}
+.landingpage .wide {
+  grid-column: span 2;
+}
+.landingpage .ultra-wide {
+  grid-column: span 3;
+}
+@media (max-width: 767px) {
+  .landingpage {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+.landingpage-tech {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 2em;
+}
+@media (max-width: 767px) {
+  .landingpage-tech {
+    display: grid;
+    grid-template-columns: 4fr;
+    gap: 1em;
+  }
+  .landingpage-tech .sidebar {
+    display: none;
+  }
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+/*# sourceMappingURL=technology.css.map */

@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+.grid div {
+  border: 2px solid black;
+}
+
+.col2 {
+  grid-column: span 2;
+}
+
+.col3 {
+  grid-column: span 3;
+}
+
+.col4 {
+  grid-column: span 4;
+}
+
+.col6 {
+  grid-column: span 6;
+}
+
+.col-full {
+  grid-column: span 12;
+}
+
+.row2 {
+  grid-row: span 2;
+}
+
+.row4 {
+  grid-row: span 4;
+}
+
+.center {
+  justify-self: center;
+  align-self: center;
+}
+
+/*# sourceMappingURL=grid_test.css.map */
