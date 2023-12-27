@@ -133,6 +133,13 @@ body {
   animation: large-text-anim 1s ease 1 forwards;
 }
 
+.nav-like {
+  text-decoration: none;
+}
+.nav-like a:hover {
+  animation: large-text-anim 1s ease 1 forwards;
+}
+
 /* Title */
 .title, .logo {
   margin-top: 2em;
@@ -172,7 +179,7 @@ body {
   align-self: center;
 }
 .footer .social .fa {
-  transform: scale(2);
+  transform: scale(1.2);
 }
 
 .footer div {

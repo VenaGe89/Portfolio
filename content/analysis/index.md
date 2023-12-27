@@ -8,15 +8,15 @@ Analyser
 ==========================
 
  <div class="box">
- <a href="01_colors.md">
+ <a href="%base_url%??analysis/01_colors">
 Färg</a>
 </div>
 <div class="box wide">
-<a href="analysis/02_load.md">
+<a href="%base_url%?analysis/02_load">
 Prestanda</a>
 </div>
 <div class="box wide">
-<a href="analysis/03_design_principles.md">
+<a href="%base_url%?analysis/03_design_principles">
 Designprinciper</a>
 </div>
 

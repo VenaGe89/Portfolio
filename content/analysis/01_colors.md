@@ -21,9 +21,9 @@ För att analysera hemsidorna användes Firefox colorpicker för att hämta fär
 Resultat
 -----------------------
 
-### Färgpalletter
-
-#### Max.se - Max Restauranger
+### Max.se - Max Restauranger
+![image](%assets_url%/img/max_se.png)
+##### Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: #8c0404">
@@ -36,7 +36,17 @@ Resultat
 </tr>
 </table>
 
-#### Kalles.se - Kalleskaviar
+#### Typsnitt
+Max hemsida använder sig inte av H1-H3 taggar.
+Den vanligaste fontfamiljen som används är följande:
+>Font-family: "flama", Arial, sans-serif
+
+
+### Kalles.se - Kalleskaviar
+
+![image](%assets_url%/img/kalles_se.png)
+
+#### Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: #ffde1c">
@@ -48,7 +58,16 @@ Resultat
 </tr>
 </table>
 
-#### Mcdonalds.com/se/sv-se - Mcdonalds
+#### Typsnitt
+På Kalles hemsida förekommer följande två fontfamiljer:
+>"new-kansas", sans-serif
+>"Futura Copy Kalles", sans-serif
+
+Där "new-kansas" verkar var den mest använda, både i paragrafer och i rubriker. "Futura Copy Kalles" används i navbaren och på knappar.
+
+### Mcdonalds.com/se/sv-se - Mcdonalds
+![image](%assets_url%/img/mcdonalds_se.png)
+#### Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: #ffb40e">
@@ -60,6 +79,14 @@ Resultat
 
 </tr>
 </table>
+
+#### Typsnitt
+McDonalds använder sig genomgående av följande fontfamilj:
+
+> font-family: Speedee, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif
+
+Bortsett från typsnittsvariationen i bilderna är typsnittet på hemsidan enformigt.
+
 Analys
 -----------------------
 
@@ -117,6 +144,15 @@ Kalles val av blå är grönare än den direkt komplementära och detta tillåte
 </tr>
 </table>
 
+### Typsnitt
+
+Samtliga hemsidor använder sig av sans-serif typsnitt, d.v.s typsnitt som saknar seriffer. Seriffer skapar kanter i typsnitten och eftersom samtliga hemsidor tillhör varumärken som vill vara varma och välkomnande gentemot kunderna är det föga förvånande att alla väljer bort seriffer som annars är förknippat med saker som akademi, journalistik och byråkrati. 
+
+### Avslutande kommentar
+
+Samtliga varumärken vill arbeta med patos gentemot kunden, men både McDonalds och Max använder sig av mer subtila metoder och förlitar sig nog på sitt redan etablerade varumärke. De försöker istället att inte sticka ut utan snarare att kännas igen. Kalles kaviar som ändå är ett etablerat varumärke men inte alls i samma magnitud har råd att sticka ut mer. Deras varumärke gör redan detta i och med sitt färgschema. Det gula mot det blåa blir kontrasterande, det är därför inte särskilt konstigt att Kalles kaviar väljer att spela på detta för skapa känsla. 
+
+Det kan även vara värt att notera att snabbmatsrestauranger behöver synas i landskaps- och stadsmiljö för att locka spontankunder medan varumärken som säljs i butik behöver sticka ut i matvaruhyllan. Det kan därför vara en konkurrensfördel att ha kontrasterande färger där, medan det kan finnas fler risker att sticka ut drastiskt när vi pratar om miljöer där människor snarare än produkter huserar. 
 
 Referenser
 -----------------------

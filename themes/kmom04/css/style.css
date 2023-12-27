@@ -37,13 +37,13 @@ pre code {
 
 @keyframes large-text-anim {
   0% {
-    font-size: x-large;
+    transform: scale(1.0)
   }
   75% {
-    font-size: xx-large;
+    transform: scale(1.4)
   }
   100% {
-    font-size: x-large;
+    transform: scale(1.2)
   }
 }
 @keyframes move-from-side {
@@ -133,6 +133,7 @@ body {
   animation: large-text-anim 1s ease 1 forwards;
 }
 
+
 /* Title */
 .title, .logo {
   margin-top: 2em;
@@ -165,15 +166,20 @@ body {
 
 .footer a {
   color: #ED4E0D;
+  text-decoration: none;
+}
+
+.footer a:hover {
+    animation: large-text-anim 1s ease 1 forwards;
 }
 
 .footer .social {
+  
   font-size: 2rem;
   align-self: center;
+
 }
-.footer .social .fa {
-  transform: scale(2);
-}
+
 
 .footer div {
   min-width: 15%;
@@ -249,6 +255,8 @@ table, thead, th, tr, td, del, s {
 .main i, .main li, .main ul, .main ol, .main p, .main em {
   background-color: #fff3df;
 }
+
+
 
 @media (max-width: 767px) {
   .title, .logo, .nav-toggle {
