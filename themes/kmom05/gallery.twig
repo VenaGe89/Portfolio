@@ -1,0 +1,15 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div>
+             {{ content }}
+        </div>
+        {% include 'incl/gallery_component.twig' %}
+    </div>
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

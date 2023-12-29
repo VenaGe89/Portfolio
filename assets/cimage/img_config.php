@@ -1,4 +1,5 @@
 <?php
+
 return [
     "mode"         => "development",
     "image_path"   =>  __DIR__ . "/../../assets/img/",

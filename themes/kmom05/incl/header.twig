@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+    {% if meta.description %}
+    <meta name="description" content="{{ meta.description|striptags }}" />
+    {% endif %}
+
+    {% if current_page %}
+    <link rel="canonical" href="{{ current_page.url }}" />
+    {% endif %}
+
+    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css />
+    <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/mobile-menu.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/blockquotes.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/code.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/grid_test.css" type="text/css" />
+     <link rel="stylesheet" href="{{ theme_url }}/css/technology.css" type="text/css" />
+    {% if config.session.theme == "dark" %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
+{% else %}
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+{% endif %}
+</head>

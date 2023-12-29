@@ -1,0 +1,14 @@
+
+{% set images = getFilesInGallery()  %}
+
+<div class="gallery-grid">
+    {% for img in images %}
+    <a href="{{ base_url }}/image/gallery/{{img}}" target="_blank">
+        <picture>
+            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/gallery/{{ img }}?w=250&h=250&crop-to-fit&sharpen&save-as=jpg&q=100">
+            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/gallery/{{ img }}?w=100&h=100&crop-to-fit&sharpen&save-as=jpg&q=100">
+            <img src="{{ base_url }}/image/gallery/{{ img }}" class="max-width" alt="AI-Art">
+        </picture>
+    </a>
+    {% endfor %}
+</div>
