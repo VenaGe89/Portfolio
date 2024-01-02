@@ -23,7 +23,7 @@ Resultat
 
 ### Max.se - Max Restauranger
 ![image](%assets_url%/img/max_se.png)
-##### Färgpalett
+#### Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: #8c0404">

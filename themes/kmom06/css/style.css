@@ -48,8 +48,6 @@ pre code {
     transform: scale(1.2)
   }
 }
-
-
 @keyframes move-from-side {
   0% {
     border-left: #ED4E0D solid 0px;
@@ -57,14 +55,14 @@ pre code {
     border-radius: 0%;
   }
   75% {
-    border-left: #ED4E0D solid 2.4dvi;
-    border-right: #ED4E0D solid 2.4dvi;
-    border-radius: 2.4dvi;
+    border-left: #ED4E0D solid 1.7dvi;
+    border-right: #ED4E0D solid 1.9dvi;
+    border-radius: 2dvi;
   }
   100% {
     border-left: #ED4E0D solid 1.5dvi;
     border-right: #ED4E0D solid 1.7dvi;
-    border-radius: 2.8dvi;
+    border-radius: 2dvi;
   }
 }
 * {
@@ -129,12 +127,23 @@ body {
 .nav a, .nav li {
   color: #000000;
   text-decoration: none;
-  font-size: medium;
-  font-size: x-large;
+  font-size: large;
+
+  display: inline-block;
+  padding-bottom:2px;
+  background-image: linear-gradient(#ED4E0D 0 0);
+  background-position: 0 100%; 
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.4s,
+    background-position 0s 0.4s; 
+
 }
 
 .nav li:hover, .nav a:hover {
-  animation: large-text-anim 1s ease 1 forwards;
+  background-position: 100% 100%; 
+  background-size: 100% 2px;
 }
 
 
@@ -236,15 +245,14 @@ img {
   margin: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  animation: move-from-side 1s 1 ease forwards;
-  background-color: #fff3df;
-}
-.main div {
-  background-color: #fff3df;
+  animation: move-from-side 0.5s 1 ease forwards;
+  background-color: #fffaf0;
+  
 }
 
+
 table, thead, th, tr, td, del, s {
-  background-color: #fff3df;
+  background-color: #fffaf0;
   color: #000000;
 }
 
@@ -257,19 +265,27 @@ table, thead, th, tr, td, del, s {
 }
 
 .main i, .main li, .main ul, .main ol, .main p, .main em {
-  background-color: #fff3df;
+  background-color: #fffaf0;
 }
 
 .gallery-grid {
+  margin-top: 2.5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 1rem;
+
   
 }
 .gallery-grid img {
   min-width: 250px;
+  border-radius: 10%;
+}
 
+.gallery-grid img:hover {
+  position: absolute;
+  border-bottom: solid 3px #b4b2b2;
+  border-right: solid 3px #b4b2b2;
 }
 .embed-container {
   position: relative;
@@ -294,6 +310,20 @@ table, thead, th, tr, td, del, s {
     margin-top: 2em;
     padding-top: 5em;
     padding-bottom: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  
+  .main {
+    z-index: 0;
+  }
+  .body {
+    z-index: 0;
+  }
+  .nav {
+    z-index: 1;
+    background: #f5f5f5;
   }
   .title {
     min-width: 50%;
