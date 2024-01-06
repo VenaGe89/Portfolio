@@ -6,8 +6,6 @@ if (session_status() == PHP_SESSION_NONE) {
 
 }
 
-// Load PicoDeprecated plugin to handle deprecated plugins
-$config['PicoDeprecated.enabled'] = true;
 
 // Add other configuration settings as needed
 
@@ -21,6 +19,3 @@ foreach ($plugins as $plugin) {
     $config['plugins'][$plugin]['enabled'] = true;
 }
 
-// Add any other configuration settings as needed
-
-// Continue with the rest of your configuration
